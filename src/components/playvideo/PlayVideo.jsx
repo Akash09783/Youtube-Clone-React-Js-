@@ -19,10 +19,11 @@ import user_profile from '../../assets/user_profile.jpg'
 
 
 
-const PlayVideo = () => {
+const PlayVideo = ({videoId}) => {
   return (
     <div className='play-video'>
-    <video src={video1} controls autoPlay muted></video>
+    {/* <video src={video1} controls autoPlay muted></video> */}
+    <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <h3>Best Youtube Channel for 4k Videos</h3>
     <div className="play-video-info">
         <p>1524 Views &bull; 2 days ago</p>
