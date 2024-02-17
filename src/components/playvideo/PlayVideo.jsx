@@ -59,8 +59,8 @@ useEffect(()=>{
       <iframe
         src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
+        allow="accelerometer; fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        
       ></iframe>
       <h3>{apiData ? apiData.snippet.title : "Title Here"}</h3>
       <div className="play-video-info">
