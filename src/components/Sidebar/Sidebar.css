@@ -51,3 +51,10 @@
     border-bottom: 3px solid red;
 
 }
+
+@media (max-width:900px) {
+    .sidebar{
+        display: none;
+    }
+    
+}
